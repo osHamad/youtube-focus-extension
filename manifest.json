@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Youtube Basic",
+  "description": "Testing out simple youtube extension",
+  "version": "1.0",
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "/icons/extension_icon.png"
+  },
+  "background": {
+    "service_worker": "script.js"
+  }
+}
