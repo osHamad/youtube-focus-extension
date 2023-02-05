@@ -1,7 +1,11 @@
-chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
-    if (changeInfo.status == 'loading') {
+const filter = {
+    url: [
+      {
+        urlMatches: 'https://www.youtube.com/',
+      },
+    ],
+  };
   
-      console.log(tab)
-  
-    }
-  })
+  chrome.webNavigation.onCompleted.addListener(() => {
+    console.log("The user has loaded my favorite website!");
+  }, filter);
