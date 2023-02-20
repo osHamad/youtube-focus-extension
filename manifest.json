@@ -1,16 +1,22 @@
 {
-  "content_scripts": [
-    {
-      "js": ["script.js"],
-      "matches": ["https://www.youtube.com/*"]
-    }
-  ],
+
   "manifest_version": 3,
   "name": "Youtube Basic",
   "description": "Testing out simple youtube extension",
-  "version": "1.1.2",
+  "version": "0.2.0",
+
   "action": {
     "default_popup": "index.html",
     "default_icon": "/icons/extension_icon.png"
-  }
+  },
+
+  "content_scripts": [
+    {
+      "all_frames": true,
+      "run_at": "document_end",
+      "js": ["scripts/home.js"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+  
 }
