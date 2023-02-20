@@ -3,7 +3,7 @@
   "manifest_version": 3,
   "name": "Youtube Basic",
   "description": "Testing out simple youtube extension",
-  "version": "0.2.0",
+  "version": "0.2.1",
 
   "action": {
     "default_popup": "index.html",
