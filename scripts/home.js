@@ -10,7 +10,7 @@ createLoadScreen = () => {
     loadDiv.style.backgroundColor = "rgb(15, 15, 15)"
     
     loadDiv.style.position = "fixed"
-    loadDiv.style.zIndex = "10000"
+    loadDiv.style.zIndex = "100000"
     
     // Add load div to the body container
     loadScreen.appendChild(loadDiv);

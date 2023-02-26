@@ -3,7 +3,7 @@
   "manifest_version": 3,
   "name": "Youtube Basic",
   "description": "Testing out simple youtube extension",
-  "version": "0.3.0",
+  "version": "0.4.1",
 
   "action": {
     "default_popup": "index.html",
@@ -22,15 +22,18 @@
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/"],
-      "js": ["scripts/home.js"]
+      "js": ["scripts/home.js"],
+      "run_at": "document_start"
     },
     {
       "matches": ["https://www.youtube.com/watch"],
-      "js": ["scripts/watch.js"]
+      "js": ["scripts/watch.js"],
+      "run_at": "document_start"
     },
     {
       "matches": ["https://www.youtube.com/shorts/*"],
-      "js": ["scripts/shorts.js"]
+      "js": ["scripts/shorts.js"],
+      "run_at": "document_start"
     }
   ],
 
