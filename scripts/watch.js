@@ -1,1 +1,1 @@
-console.log("this is watch page")
+console.log('hello world')
