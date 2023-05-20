@@ -26,7 +26,7 @@
       "run_at": "document_start"
     },
     {
-      "matches": ["https://www.youtube.com/watch"],
+      "matches": ["https://www.youtube.com/watch*"],
       "js": ["scripts/watch.js"],
       "run_at": "document_start"
     },
@@ -39,6 +39,13 @@
 
   "background": {
     "service_worker": "background.js"
-  }
+  },
+
+  "web_accessible_resources": [
+    {
+      "resources": ["/scripts/test.html", "/scripts/test.js", "/icons/*"],
+      "matches": [ "https://www.youtube.com/*" ]
+    }
+  ]
   
 }

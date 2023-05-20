@@ -40,3 +40,4 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(
     ]
   }
 )
+
